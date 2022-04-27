@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de controle - Switch</title>
+</head>
+<body onload="iniciar()">
+    <script type="text/javascript">
+        function iniciar() {
+            var hoje = new Date();
+            var diaSemana = hoje.getDay();
+            var nomeDiaSemana = "";
+            switch(diaSemana) {
+                case 0:
+                    nomeDiaSemana = "Domingo";
+                    break;
+                case 1:
+                    nomeDiaSemana = "Segunda-feira";
+                    break;
+                case 2:
+                    nomeDiaSemana = "Terça-feira";
+                    break;
+                case 3:
+                    nomeDiaSemana = "Quarta-feira";
+                    break;
+                case 4:
+                    nomeDiaSemana = "Quinta-feira";
+                break;
+                case 5:
+                    nomeDiaSemana = "Sexta-feira";
+                    break;
+                case 6:
+                    nomeDiaSemana = "Sábado";
+            }
+            document.write ("Hoje é " + nomeDiaSemana);
+        }
+    </script>
+</body>
+</html>
