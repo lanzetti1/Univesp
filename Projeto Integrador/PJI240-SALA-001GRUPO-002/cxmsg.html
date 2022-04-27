@@ -10,10 +10,12 @@
     <script type="text/javascript">
         function login() {
             var nome = prompt("Qual é o seu nome?", "Zé Ninguém");
-            alert("Olá, " + nome.toUpperCase() +".");
+            resultado.innerHTML = "Olá, " + nome.toUpperCase() +".";
         }
     </script>
     <h1>Identificação</h1>
     <input type="button" value="Login" onclick="javascript:login()">
+    <hr>
+    <div id="resultado">Olá.</div>
 </body>
 </html>
