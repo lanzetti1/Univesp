@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de produto com validação de campos</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function validarDescricao() {
+            if (desc.value.trim() === "") {
+                desc.style.background = "yellow";
+                alert("Preencha a descrição do produto!");
+                return false;
+            }
+            else {
+                desc.style.background = "white";
+                return true;
+            }
+        }
+        function validarQuantidade() {
+            var erro = false;
+            if (qtd.value.trim() === "") {
+                erro = true;
+            }
+            else {
+                var nQtd = parseInt(qtd.value);
+                if (nQtd < 1 || nQtd > 999) {
+                    erro = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
