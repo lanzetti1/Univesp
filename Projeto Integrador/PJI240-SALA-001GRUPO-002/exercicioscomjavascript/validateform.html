@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de produto com validação de campos</title>
 </head>
+
 <body>
     <script type="text/javascript">
         function validarDescricao() {
@@ -23,15 +25,15 @@
             var erro = false;
             if (qtd.value.trim() === "") {
                 erro = true;
-                }
+            }
             else {
                 if (isNaN(qtd.value) === true) {
                     erro = true;
-                    }
-            else {
-                var nQtd = parseInt(qtd.value);
-                if (nQtd < 1 || nQtd > 999) {
-                    erro = true;
+                }
+                else {
+                    var nQtd = parseInt(qtd.value);
+                    if (nQtd < 1 || nQtd > 999) {
+                        erro = true;
                     }
                 }
             }
@@ -42,23 +44,25 @@
             else {
                 qtd.style.background = "white";
             }
-            return(!erro!);
+            return (!erro);
         }
         function validarPreco() {
             var erro = false;
-            if (uni.value.trim() === "") {
-                erro = true;
-            }
-            else (isNaN(unit.value) === true) {
+            if (unit.value.trim() === "") {
                 erro = true;
             }
             else {
-                var nUnit = parseFloat(unit.value);
-                if (nUnit <= 0.0) {
-                    erro = true;
+                if(isNaN(unit.value) === true) {
+                erro = true;
                 }
                 else {
-                    unit.value = nUnit.toFixed(2);
+                    var nUnit = parseFloat(unit.value);
+                    if (nUnit <= 0.0) {
+                        erro = true;
+                    }
+                    else {
+                        unit.value = nUnit.toFixed(2);
+                    }
                 }
             }
             if (erro === true) {
@@ -68,7 +72,7 @@
             else {
                 unit.style.background = "white";
             }
-            return (!erro!);
+            return (!erro);
         }
         function calcular() {
             if (validarDescricao() && validarQuantidade() && validarPreco()) {
@@ -76,29 +80,32 @@
                 total.value = nTotal.toFixed(2);
             }
         }
+    
+        
     </script>
 
     <h1>Produto</h1>
     <table border="0">
         <tr>
-            <td>Descrição</td>
+            <td>Descrição:</td>
             <td><input type="text" id="desc" value="" size="20" maxlength="20" onblur="validarDescricao()" /></td>
         </tr>
         <tr>
             <td>Quantidade:</td>
-            <td><input type="text" id="qtd" value="" size="3" maxlength="3" onblur="validarQuantidade()" /></td>
+            <td><input type="text" id="qtd" value="" size="3" maxlength="3" onblur="validarQuantidade()"></td>
         </tr>
         <tr>
             <td>Preço Unitário:</td>
-            <td><input type="text" id="unit" value="" size="10" maxlength="10" onblur="validarPreco()" /></td>
+            <td><input type="text" id="unit" value="" size="10" maxlength="10" onblur="validarPreco()"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" value="Calcular" onclick="calcular()" /></td>
+            <td colspan="2"><input type="submit" value="Calcular" onclick="calcular()"></td>
         </tr>
         <tr>
             <td>Preço Total:</td>
-            <td><input type="text" id="total" value="" size="10" readonly /></td>
+            <td><input type="text" id="total" value="" size="10" readonly></td>
         </tr>
     </table>
 </body>
+
 </html>
