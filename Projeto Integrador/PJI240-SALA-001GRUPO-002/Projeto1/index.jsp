@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazendinha da matemática</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h2>Benvindo à <strong>FAZENDINHA DA MATEMÁTICA</strong>, sua nova e divertida forma de aprender a MATEMÁTICA.</h2>
