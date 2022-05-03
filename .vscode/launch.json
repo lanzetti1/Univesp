@@ -1,15 +1,23 @@
 {
-    // Use o IntelliSense para saber mais sobre os atributos possíveis.
-    // Focalizar para exibir as descrições dos atributos existentes.
-    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-    
-        {
-            "type": "pwa-msedge",
-            "request": "launch",
-            "name": "Open Index.html",
-            "file": "c:\\Users\\Claudio\\OneDrive\\Documents\\Univesp\\Teste\\Teste1\\Projeto2\\Index.html"
-        }
-    ]
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Arquivo Atual",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+
+    {
+      "type": "pwa-msedge",
+      "request": "launch",
+      "name": "Open Index.html",
+      "file": "c:\\Users\\Claudio\\OneDrive\\Documents\\Univesp\\Teste\\Teste1\\Projeto2\\Index.html"
+    }
+  ]
 }
