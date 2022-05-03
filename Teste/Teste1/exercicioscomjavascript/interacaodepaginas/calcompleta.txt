@@ -1,0 +1,2 @@
+Teste de interação entre páginas com uma calculadora.
+Será criado um arquivo externo em Javascript com o código-fonte em separado do HTML.
