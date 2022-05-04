@@ -12,6 +12,14 @@
       "console": "integratedTerminal",
       "justMyCode": true
     },
+    {
+      "name": "Python: Arquivo Atual",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
 
     {
       "type": "pwa-msedge",
