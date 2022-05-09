@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gideon+Roman';
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
+}
+
+header{
+    background-color: #122a57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: orangered;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+header .list-items{
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a{
+    color: aquamarine;
+}
+
+.apresentacao{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+}
+
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+
+.texto-apresentacao h1{
+    color: #122a57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: orange;
+    background-color: #099734;
+    border-radius: 30px;
+    width: 160px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#quem-somos{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    color: black
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 310px;
+    margin: auto;
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 70px;
+    width: 5px;
+    margin-right: 15px;
+    position: relative;
+    background-color: #122a57;
+}
+
+#quem-somos p {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+
+.container-externo{
+    background-color: #122a57;
+    width: 100%;
+}
+
+#atividades{
+    flex-direction: column;
+    padding: 40px;
+}
+
+#atividades h2{
+    color: aquamarine;
+    font-size: 40px;
+}
+
+.li-ativ{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: auto;
+    align-items: flex-end;
+}
+
+.li-ativ .itativ{
+    text-align: center;  
+}
+
+.itativ a{
+    color: orange;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #099734;
+    border-radius: 15px;
+    width:auto;
+    display: block;
+    text-decoration: none;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+
+.itativ p{
+    color: orangered;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#servicos{
+    flex-direction: column;
+    height: 75vh;
+    padding-top: 50px;
+}
+
+#servicos h2{
+    font-size: 36px;
+}
+
+
+.list-serv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+}
+
+.item-serv{
+    flex:auto;
+    padding: 10px;
+    border: 5px solid orangered;
+    border-radius: 12px;
+    margin-right: 25px;
+    max-width: 240px;
+    margin-top: 20px;
+}
+
+.item-serv .btn{
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    width: auto;
+}
+.item-serv h3{
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.item-serv h3::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #122a57;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.item-serv ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-serv ul li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item-serv ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: flex;
+}
+
+footer{
+    background-color: #122a57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/*mobile*/
+
+/* Ajustes necessários para páginas responsivas */
+/* de tecnologia mobile*/
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+    
+    .li-ativ{
+        flex-direction: column;
+    }
+
+    .itativ img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-serv{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-serv .item-serv{
+        max-width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/*parte3 10:42*/
