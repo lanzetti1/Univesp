@@ -1,13 +1,13 @@
-function String2Number() {
+function String2Number(valor) {
     valor = valor.replace(",", ".");
     return(parseFloat(valor));
 }
 function digito(dig) {
     if (res.value.lentgth < 12) {
-        if(res.value != "0")
-        res.value = res.value + dig;
-    else
-        res.value = dig;    
+        if (res.value != "0")
+            res.value = res.value + dig;
+        else
+            res.value = dig;    
     }
 }
 function total() {
@@ -19,7 +19,7 @@ function total() {
         res.value = parseFloat(vl.value) * parseFloat(res.value);
     else if (op.value === "/") {
         if (res.value != 0)
-        res.value = parseFloat(vl.value) / parseFloat(res.value);
+            res.value = parseFloat(vl.value) / parseFloat(res.value);
         else
             res.value = "Erro!";
     }
