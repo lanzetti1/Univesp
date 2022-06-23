@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Pagina Inicial da Biblioteca</h1>
+  <p>Benvindo(a) a Biblioteca, um website devenvolvido pelo grupo do:  <em>PJI240-SALA-001GRUPO-002</em>!</p>
+  <h2>Conteudo dinamico</h2>
+  <p>A biblioteca tem as seguintes contagens de registros:</p>
+  <ul>
+    <li><strong>Livros:</strong> {{ num_books }}</li>
+    <li><strong>Copias:</strong> {{ num_instances }}</li>
+    <li><strong>Copias disponiveis:</strong> {{ num_instances_available }}</li>
+    <li><strong>Autores:</strong> {{ num_authors }}</li>
+  </ul>
+  <p>Voce visitou esta pagina {{ num_visits }}{% if num_visits == 1 %} vez{% else %} vezes{% endif %}.</p>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+No prompt de comando:
+
+crie um diretório : mkdir <nome do diretório>.
+	para remover:rmdir <nome do diretorio> /s /q  (/s/q - apaga o conteúdo interno do diretótio)
+
+entre no diretório: cd <nome do diertório>
+
+crie o ambiente virtual: virtualenv <nome do ambiente>
+
+ative o ambiente virtual: <nome do ambiente>\scripts\activate.bat
+	instale o programa que vai utilizar: pip3 install <nome da aplicação>
+	para desativar:deactivate
+
+crie uma página de teste: nano <nome da página>.py
+	para testar a página: set <nome do app>_APP =<nome da página>
+	para rodar a página em modo de desenvolvimento: set <nome do app>_ENV = devlopment
+	rode a aplicação e verifique a página criada: <nome da aplicação> run
+
+abra um navegador e cole a endereço gerado.
+
+
+***********************************************************************************************************
+
+
+Exemplo: no prompt de comando.
+
+	Criando o diretório.
+
+c:\Users\usuario>mkdir pagina de teste
+c:\Users\usuario>cd pagina de teste
+c:\Users\usuario\pagina de teste>
+
+	Criando o ambiente virtual e ativando o ambiente.
+
+c:\Users\usuario\pagina de teste>virtualenv <nome do ambiente virtual>
+c:\Users\usuario\pagina de teste><nome do ambiente virtual>\Scripts\activate.bat
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>
+
+	Instalando os aplicativos.
+
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>pip3 install flask sqlalchemy flask-sqlalchemy
+
+	Criando a página de teste.
+
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>nano hello.py
+
+Escreva as instruções e salve:
+
+	from flask import Flask
+
+	app = Flask(__name__)
+
+
+	@app.route('/')
+	def hello():
+    		return 'Hello, World!'
+
+
+	Ative a variável de ambiente e o modo de desenvolvimento:
+
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>set FLASK_APP = hello
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>set FLASK_ENV = devlopment
+
+	Rode a aplicação
+
+(nome do ambiente virtual)c:\Users\usuario\pagina de teste>flask run
+
+	Saida esperada
+
+ * Serving Flask app "hello" (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 813-894-335

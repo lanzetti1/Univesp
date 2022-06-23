@@ -1,4 +1,0 @@
-A pasta contém arquivos de teste do projeto integrador número 2 da Univesp, bem como do aprendizado de linguagens.
-Foi criada uma pasta de arquivos (arq) com algumas informações básicas sobre o projeto e artigos encontrados.
-A pasta Teste contém alumas tentativas com linguagens de programação, porém, necessitam mais verificação.
-A pasta TPj contém a parte do projeto propriamente dita.
