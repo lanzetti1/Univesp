@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "updates": "^13.1.0",
+    "upgrades": "^2.8.0-rc.0"
+  }
+}
