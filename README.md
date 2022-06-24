@@ -1,2 +1,0 @@
-# Univesp
-Exercícios da Faculdade
