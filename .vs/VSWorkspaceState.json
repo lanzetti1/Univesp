@@ -1,6 +1,10 @@
 {
+  "ActiveTargetSystem": "WSL: Ubuntu",
+  "DevContainersInfoBarHidden": true,
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Exercicios"
   ],
+  "SelectedNode": "\\Exercicios\\Aula_15_Prática_de_Segmentação_Semântica_com_CNN.ipynb",
   "PreviewInSolutionExplorer": false
 }
